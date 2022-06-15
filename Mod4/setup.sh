@@ -26,7 +26,7 @@ az storage cors add --methods DELETE GET HEAD MERGE OPTIONS POST PUT --origins *
 printf "${GREEN}Creating containers for the sample forms. \n${NORMAL}"
 az storage container create --account-name $storageAccName --name 1040examples --auth-mode login
 az storage container create --account-name $storageAccName --name 1099examples --auth-mode login
-az storage container create --account-name $storageAccName --name TestDoc --auth-mode login
+az storage container create --account-name $storageAccName --name testdoc --auth-mode login
 
 # Upload the sample data
 printf "${GREEN}Uploading the sample forms to the storage account. \n${NORMAL}"
